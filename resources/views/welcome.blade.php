@@ -114,79 +114,164 @@
         </div>
     </section>
 
-    {{-- feature section 1 --}}
-    <section class="bg-white dark:bg-gray-900 my-20">
+    {{-- feature section --}}
+    <section class="my-20">
 
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        {{-- feature section 1 --}}
+        <section class="bg-white dark:bg-gray-900 my-5">
 
-            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
-                <h2
-                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
-                    Code Like a Pro</h2>
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
 
-                <p class="mb-4">Ask ChatGPT plus to make a code and debug easily and fastly</p>
+                    <h2
+                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                        Code Like a Pro</h2>
 
+                    <p class="mb-4">Ask ChatGPT plus to make a code and debug easily and fastly</p>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+
+                    <img class="w-full rounded-lg" src="img/Frame13.png" alt="office content 1">
+
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame14.png" alt="office content 2">
+
+                </div>
             </div>
+        </section>
 
-            <div class="grid grid-cols-2 gap-4 mt-8">
+        {{-- feature section 2 --}}
+        <section class="bg-white dark:bg-gray-900 my-5">
 
-                <img class="w-full rounded-lg" src="img/Frame13.png" alt="office content 1">
+            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame14.png" alt="office content 2">
+                <div class="grid grid-cols-2 gap-4 mt-8">
 
+                    <img class="w-full rounded-lg" src="img/Frame15.png" alt="office content 1">
+
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame18.png" alt="office content 2">
+
+                </div>
+
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+
+                    <h2
+                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                        Write with philosopher idea</h2>
+
+                    <p class="mb-4">Ask ChatGPT plus to help your copywriting and generating ideas. Faster like never
+                        before</p>
+
+                </div>
             </div>
-        </div>
+        </section>
+
+        {{-- feature section 3 --}}
+        <section class="bg-white dark:bg-gray-900 my-5">
+
+            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+
+                    <h2
+                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                        24/7 No outgage capacity</h2>
+
+                    <p class="mb-4">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure
+                        you can use ChatGPT even when demand is high</p>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+
+                    <img class="w-full rounded-lg" src="img/Frame17.png" alt="office content 1">
+
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame16.png" alt="office content 2">
+
+                </div>
+            </div>
+        </section>
+
     </section>
 
-    {{-- feature section 2 --}}
-    <section class="bg-white dark:bg-gray-900 my-20">
+    {{-- pricing section --}}
+    <section class="grid justify-center my-20">
 
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <p
+            class="inline-flex justify-center mb-5 text-6xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Our Price</p>
 
-            <div class="grid grid-cols-2 gap-4 mt-8">
+        <p class="inline-flex justify-center font-light text-gray-500">Dont worry about the price, we keep it low just
+            for you so you can get creative!</p>
 
-                <img class="w-full rounded-lg" src="img/Frame15.png" alt="office content 1">
+        <div class="flex justify-center gap-10 mt-10">
 
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame18.png" alt="office content 2">
+            {{-- card 1 --}}
+            <div
+                class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
+                <a href="#">
+                    <img class="p-8 rounded" src="img/Frame19.png" alt="product image" />
+                </a>
+
+                <div class="px-5 pb-5">
+
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">ChatGPT 3.5 Plus & <br> ChatGPT 4</h5>
+                    </a>
+
+                    <div class="flex items-center mt-2.5 mb-5">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>First star</title>
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Second star</title>
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Third star</title>
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Fourth star</title>
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Fifth star</title>
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                            </path>
+                        </svg>
+                        <span
+                            class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp 85.000</span>
+                        <a href="#"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"> Subscribe</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-
-                <h2
-                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
-                    Write with philosopher idea</h2>
-
-                <p class="mb-4">Ask ChatGPT plus to help your copywriting and generating ideas. Faster like never before</p>
-
-            </div>
         </div>
-    </section>
 
-    {{-- feature section 3 --}}
-    <section class="bg-white dark:bg-gray-900 my-20">
-
-        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-
-            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-
-                <h2
-                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
-                    24/7 No outgage capacity</h2>
-
-                <p class="mb-4">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure you can use ChatGPT even when demand is high</p>
-
-            </div>
-
-            <div class="grid grid-cols-2 gap-4 mt-8">
-
-                <img class="w-full rounded-lg" src="img/Frame17.png" alt="office content 1">
-
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame16.png" alt="office content 2">
-
-            </div>
-        </div>
     </section>
 
     {{-- flowbite js script --}}
