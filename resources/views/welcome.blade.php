@@ -24,8 +24,8 @@
 
         <div class="container flex flex-wrap items-center justify-between">
 
-            <a href="https://flowbite.com/" class="flex items-center">
-                <img src="img/mainlogo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            <a href="#" class="flex items-center">
+                <img src="img/mainlogo.png" class="h-6 mr-3 sm:h-9" alt="Firo Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Firo Store</span>
             </a>
 
@@ -47,29 +47,29 @@
 
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white">Home</a>
+                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Home</a>
                     </li>
 
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white">About</a>
+                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">About</a>
                     </li>
 
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white">Pricing</a>
+                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Pricing</a>
                     </li>
 
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white">Contact</a>
+                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Contact</a>
                     </li>
 
                     <li>
 
                         <button
-                            class="md:p-1 text-xl w-40 h-12 border-2 border-pink-600 text-pink-600 rounded-lg hover:border-none hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:text-white transition ease-linear duration-700">
-                            Subsribe Now
+                            class="md:p-1 text-xl w-40 h-12 border-2 border-pink-600 text-pink-600 rounded-lg hover:font-semibold hover:border-none hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:text-white transition ease-linear duration-700">
+                            Subscribe Now
                         </button>
                     </li>
 
@@ -88,7 +88,8 @@
 
                 <h1 class="text-3xl font-extrabold sm:text-5xl">
                     Feel The Future In Your Hands With
-                    <strong class="mt-5 text-6xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 sm:block">
+                    <strong
+                        class="mt-5 text-6xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 sm:block">
                         ChatGPT 3.5 Plus & ChatGPT 4
                     </strong>
                 </h1>
@@ -101,7 +102,7 @@
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
                     <a class="block w-full rounded bg-pink-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-pink-600 focus:outline-none focus:ring active:bg-pink-400 sm:w-auto"
                         href="/get-started">
-                        Get Started
+                        Subscribe Now
                     </a>
 
                     <a class="block w-full rounded px-12 py-3 text-sm font-medium text-pink-500 shadow hover:text-pink-600 focus:outline-none focus:ring active:text-pink-400 sm:w-auto"
@@ -113,7 +114,80 @@
         </div>
     </section>
 
+    {{-- feature section 1 --}}
+    <section class="bg-white dark:bg-gray-900 my-20">
 
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+
+                <h2
+                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                    Code Like a Pro</h2>
+
+                <p class="mb-4">Ask ChatGPT plus to make a code and debug easily and fastly</p>
+
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-8">
+
+                <img class="w-full rounded-lg" src="img/Frame13.png" alt="office content 1">
+
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame14.png" alt="office content 2">
+
+            </div>
+        </div>
+    </section>
+
+    {{-- feature section 2 --}}
+    <section class="bg-white dark:bg-gray-900 my-20">
+
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+            <div class="grid grid-cols-2 gap-4 mt-8">
+
+                <img class="w-full rounded-lg" src="img/Frame15.png" alt="office content 1">
+
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame18.png" alt="office content 2">
+
+            </div>
+
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+
+                <h2
+                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                    Write with philosopher idea</h2>
+
+                <p class="mb-4">Ask ChatGPT plus to help your copywriting and generating ideas. Faster like never before</p>
+
+            </div>
+        </div>
+    </section>
+
+    {{-- feature section 3 --}}
+    <section class="bg-white dark:bg-gray-900 my-20">
+
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+
+                <h2
+                    class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                    24/7 No outgage capacity</h2>
+
+                <p class="mb-4">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure you can use ChatGPT even when demand is high</p>
+
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-8">
+
+                <img class="w-full rounded-lg" src="img/Frame17.png" alt="office content 1">
+
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame16.png" alt="office content 2">
+
+            </div>
+        </div>
+    </section>
 
     {{-- flowbite js script --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
