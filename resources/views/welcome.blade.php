@@ -200,7 +200,7 @@
     <section class="grid justify-center my-20">
 
         <p
-            class="inline-flex justify-center mb-5 text-6xl font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            class="inline-flex justify-center mb-5 text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             Our Price</p>
 
         <p class="inline-flex justify-center font-light text-lg text-gray-500">Dont worry about the price, we keep it
@@ -276,6 +276,69 @@
         </div>
 
     </section>
+
+    {{-- CTA section --}}
+    <section class="bg-white dark:bg-gray-900">
+
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+
+            <div class="mx-auto max-w-screen-sm text-center">
+
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+                    Start your subscription today</h2>
+
+                <p class="mb-10 font-light text-gray-500 dark:text-gray-400 md:text-lg">Feel the creativity of ChatGPT directly, it's in your hand!</p>
+
+                <a href="#"
+                    class="text-white bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-800 font-semibold rounded-lg text-xl px-5 py-2.5 mr-2 mb-2">Subcribe Now</a>
+            </div>
+        </div>
+    </section>
+    C:\laragon\www\LapakNew
+    {{-- footer section --}}
+    <section class="mx-10">
+        <footer class="bg-white rounded-lg  dark:bg-gray-900 m-4">
+
+            <div class="w-full container mx-auto p-4 md:px-6 md:py-8">
+
+                <div class="sm:flex sm:items-center sm:justify-between">
+
+                    <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+                        <img src="img/mainlogo.png" class="h-8 mr-3" alt="FiroStore Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Firo
+                            Store</span>
+                    </a>
+
+                    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+
+                        <li>
+                            <a href="#" class="mr-4 hover:underline md:mr-6 ">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="mr-4 hover:underline md:mr-6 ">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <hr class="my-6 sm:mx-auto lg:my-8" />
+                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">©2023
+                    <a href="#" class="hover:underline">Firo Store™</a>. All Rights
+                    Reserved.</span>
+            </div>
+        </footer>
+    </section>
+
+
 
     {{-- flowbite js script --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
