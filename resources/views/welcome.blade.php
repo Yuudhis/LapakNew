@@ -12,6 +12,12 @@
     {{-- flowbite js --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- pages logo -->
+    <link rel="icon" type="image/x-icon" href="img/mainlogo.png">
+
     <title>Firo Store</title>
 </head>
 
@@ -277,8 +283,98 @@
 
     </section>
 
+    <!-- contact section -->
+    <section class="my-40">
+
+        <p id="contact"
+            class="flex justify-center text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Contact Us</p>
+
+        <div class="grid grid-rows lg:flex justify-center gap-10 mt-10">
+
+            <!-- email -->
+            <div
+                class="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                <i data-feather="mail" class="w-10 h-10 mb-2 text-red-600"></i>
+
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Email</h5>
+
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Contact us for information about
+                    partnership or anything!</p>
+
+                <a href="mailto:saurusdana396@gmail.com" target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:underline">
+                    Email
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                        </path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                        </path>
+                    </svg>
+                </a>
+
+            </div>
+
+            <!-- Whatsapp -->
+            <div
+                class="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                <i data-feather="phone" class="w-10 h-10 mb-2 text-green-400"></i>
+
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Whatsapp</h5>
+
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Reach us through Whatsapp and we'll give the fastest respond as soon as we can</p>
+
+                <a href="https://wa.me/6283110823050/" target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:underline">
+                    Whatsapp
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                        </path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                        </path>
+                    </svg>
+                </a>
+
+            </div>
+
+            <!-- instagram -->
+            <div
+                class="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+
+                <i data-feather="instagram" class="w-10 h-10 mb-2 text-pink-500"></i>
+
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Instagram</h5>
+
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Take a look of our gallery and recent
+                    projects on Instagram</p>
+
+                <a href="https://www.instagram.com/danasaurus.store/" target="_blank"
+                    class="inline-flex items-center text-blue-600 hover:underline">
+                    Instagram
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                        </path>
+                        <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                        </path>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
     {{-- CTA section --}}
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-900 mb-20">
 
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
 
@@ -287,14 +383,16 @@
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
                     Start your subscription today</h2>
 
-                <p class="mb-10 font-light text-gray-500 dark:text-gray-400 md:text-lg">Feel the creativity of ChatGPT directly, it's in your hand!</p>
+                <p class="mb-10 font-light text-gray-500 dark:text-gray-400 md:text-lg">Feel the creativity of ChatGPT
+                    directly, it's in your hand!</p>
 
                 <a href="#"
-                    class="text-white bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-800 font-semibold rounded-lg text-xl px-5 py-2.5 mr-2 mb-2">Subcribe Now</a>
+                    class="text-white bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-800 font-semibold rounded-lg text-xl px-5 py-2.5 mr-2 mb-2">Subcribe
+                    Now</a>
             </div>
         </div>
     </section>
-    C:\laragon\www\LapakNew
+
     {{-- footer section --}}
     <section class="mx-10">
         <footer class="bg-white rounded-lg  dark:bg-gray-900 m-4">
@@ -338,7 +436,10 @@
         </footer>
     </section>
 
-
+    <!-- script for feather icons -->
+    <script>
+        feather.replace()
+    </script>
 
     {{-- flowbite js script --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
