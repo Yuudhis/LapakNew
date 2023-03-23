@@ -18,72 +18,12 @@
     <!-- pages logo -->
     <link rel="icon" type="image/x-icon" href="img/mainlogo.png">
 
-    <title>Firo Store</title>
+    <title>Danasaurus Store</title>
 </head>
 
 <body>
 
-    {{-- <h1 class="flex justify-center text-6xl font-bold my-20">Hello World</h1> --}}
-
-    {{-- navbar section --}}
-    <nav class="sticky top-0 z-50 bg-white mt-5 mx-20 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-
-        <div class="container flex flex-wrap items-center justify-between">
-
-            <a href="#" class="flex items-center">
-                <img src="img/mainlogo.png" class="h-6 mr-3 sm:h-9" alt="Firo Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Firo Store</span>
-            </a>
-
-            <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Pricing</a>
-                    </li>
-
-                    <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-xl rounded text-[#333333] hover:text-transparent  hover:bg-clip-text hover:bg-gradient-to-r from-purple-400 to-pink-600 md:p-1 dark:text-white transition ease-linear duration-700">Contact</a>
-                    </li>
-
-                    <li>
-
-                        <button
-                            class="md:p-1 text-xl w-40 h-12 border-2 border-pink-600 text-pink-600 rounded-lg hover:font-semibold hover:border-none hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:text-white transition ease-linear duration-700">
-                            Subscribe Now
-                        </button>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-    </nav>
+    @include('layouts.navbar')
 
     {{-- hero section --}}
     <section class="">
@@ -121,7 +61,7 @@
     </section>
 
     {{-- feature section --}}
-    <section class="my-20">
+    <section class="my-20" id="about">
 
         {{-- feature section 1 --}}
         <section class="bg-white dark:bg-gray-900 my-5">
@@ -203,7 +143,7 @@
     </section>
 
     {{-- pricing section --}}
-    <section class="grid justify-center my-20">
+    <section class="grid justify-center my-20" id="price">
 
         <p
             class="inline-flex justify-center mb-5 text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
@@ -231,29 +171,29 @@
                     </a>
 
                     <div class="flex items-center mt-2.5 mb-5">
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <title>First star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <title>Second star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <title>Third star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
                             <title>Fourth star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
@@ -326,7 +266,8 @@
 
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Whatsapp</h5>
 
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Reach us through Whatsapp and we'll give the fastest respond as soon as we can</p>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Reach us through Whatsapp and we'll give
+                    the fastest respond as soon as we can</p>
 
                 <a href="https://wa.me/6283110823050/" target="_blank"
                     class="inline-flex items-center text-blue-600 hover:underline">
@@ -393,56 +334,7 @@
         </div>
     </section>
 
-    {{-- footer section --}}
-    <section class="mx-10">
-        <footer class="bg-white rounded-lg  dark:bg-gray-900 m-4">
-
-            <div class="w-full container mx-auto p-4 md:px-6 md:py-8">
-
-                <div class="sm:flex sm:items-center sm:justify-between">
-
-                    <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-                        <img src="img/mainlogo.png" class="h-8 mr-3" alt="FiroStore Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Firo
-                            Store</span>
-                    </a>
-
-                    <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
-
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6 ">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="mr-4 hover:underline md:mr-6 ">Pricing</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="hover:underline">Contact</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <hr class="my-6 sm:mx-auto lg:my-8" />
-                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">©2023
-                    <a href="#" class="hover:underline">Firo Store™</a>. All Rights
-                    Reserved.</span>
-            </div>
-        </footer>
-    </section>
-
-    <!-- script for feather icons -->
-    <script>
-        feather.replace()
-    </script>
-
-    {{-- flowbite js script --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    @include('layouts.footer')
 
 </body>
 
