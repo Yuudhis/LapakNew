@@ -26,5 +26,17 @@ Route::get('/register', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin');
+    return view('dashboard');
+});
+
+Route::get('/table', function () {
+    return view('table');
+});
+
+Route::get('/datauser', function () {
+    return view('datauser');
+});
+
+Route::get('/user', function () {
+    return view('user');
 });

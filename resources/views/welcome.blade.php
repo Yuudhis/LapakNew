@@ -18,6 +18,16 @@
     <!-- pages logo -->
     <link rel="icon" type="image/x-icon" href="img/mainlogo.png">
 
+    <style>
+        .filled {
+            fill: currentColor;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
     <title>Danasaurus Store</title>
 </head>
 
@@ -47,12 +57,12 @@
 
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
                     <a class="block w-full rounded bg-pink-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-pink-600 focus:outline-none focus:ring active:bg-pink-400 sm:w-auto"
-                        href="/get-started">
+                        href="login">
                         Subscribe Now
                     </a>
 
                     <a class="block w-full rounded px-12 py-3 text-sm font-medium text-pink-500 shadow hover:text-pink-600 focus:outline-none focus:ring active:text-pink-400 sm:w-auto"
-                        href="/about">
+                        href="/#about">
                         Learn More
                     </a>
                 </div>
@@ -212,7 +222,7 @@
 
                     <div class="flex items-center justify-between">
                         <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp 85.000</span>
-                        <a href=""
+                        <a href="login"
                             class="text-white bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                             Subscribe</a>
                     </div>
@@ -327,7 +337,7 @@
                 <p class="mb-10 font-light text-gray-500 dark:text-gray-400 md:text-lg">Feel the creativity of ChatGPT
                     directly, it's in your hand!</p>
 
-                <a href="#"
+                <a href="login"
                     class="text-white bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-800 font-semibold rounded-lg text-xl px-5 py-2.5 mr-2 mb-2">Subcribe
                     Now</a>
             </div>

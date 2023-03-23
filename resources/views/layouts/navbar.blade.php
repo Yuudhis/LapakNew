@@ -3,7 +3,7 @@
 
         <div class="container flex flex-wrap items-center justify-between">
 
-            <a href="#" class="flex items-center">
+            <a href="/" class="flex items-center">
                 <img src="img/mainlogo.png" class="h-6 mr-3 sm:h-9" alt="Firo Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Danasaurus
                     Store</span>
