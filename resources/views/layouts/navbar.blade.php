@@ -1,5 +1,5 @@
     {{-- navbar section --}}
-    <nav class="sticky top-0 z-50 bg-white mt-5 mx-20 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <nav class="sticky top-0 z-50 bg-white mt-10 md:mt-5 px-7 md:px-20 py-2.5 rounded dark:bg-gray-900">
 
         <div class="container flex flex-wrap items-center justify-between">
 

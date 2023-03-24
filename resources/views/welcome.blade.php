@@ -71,20 +71,20 @@
     </section>
 
     {{-- feature section --}}
-    <section class="my-20" id="about">
+    <section class="my-1 md:my-20" id="about">
 
         {{-- feature section 1 --}}
-        <section class="bg-white dark:bg-gray-900 my-5">
+        <section class="bg-white dark:bg-gray-900 my-1 md:my-5">
 
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
-                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div class="font-light text-gray-500 dark:text-gray-400 text-3xl">
 
                     <h2
-                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                        class="mb-4 md:text-7xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                         Code Like a Pro</h2>
 
-                    <p class="mb-4">Ask ChatGPT plus to make a code and debug easily and fastly</p>
+                    <p class="mb-4 text-base md:text-lg">Ask ChatGPT plus to make a code and debug easily and fastly</p>
 
                 </div>
 
@@ -98,8 +98,8 @@
             </div>
         </section>
 
-        {{-- feature section 2 --}}
-        <section class="bg-white dark:bg-gray-900 my-5">
+        {{-- feature section 2 (desktop view) --}}
+        <section class="hidden md:block bg-white dark:bg-gray-900 my-1 md:my-5">
 
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
@@ -124,15 +124,41 @@
             </div>
         </section>
 
-        {{-- feature section 3 --}}
-        <section class="bg-white dark:bg-gray-900 my-5">
+        {{-- feature section 2 (mobile view) --}}
+        <section class="block md:hidden bg-white dark:bg-gray-900 my-1 md:my-5">
 
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
-                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div class="font-light text-gray-500 text-sm md:text-lg dark:text-gray-400">
 
                     <h2
-                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white">
+                        class="mb-4 text-3xl md:text-7xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                        Write with philosopher idea</h2>
+
+                    <p class="mb-4">Ask ChatGPT plus to help your copywriting and generating ideas. Faster like never
+                        before</p>
+
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+
+                    <img class="w-full rounded-lg" src="img/Frame15.png" alt="office content 1">
+
+                    <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/Frame18.png" alt="office content 2">
+
+                </div>
+            </div>
+        </section>
+
+        {{-- feature section 3 --}}
+        <section class="bg-white dark:bg-gray-900 my-1 md:my-5">
+
+            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 grid justify-center text-center ">
+
+                    <h2
+                        class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white md:text-left">
                         24/7 No outgage capacity</h2>
 
                     <p class="mb-4">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure
@@ -195,15 +221,15 @@
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Third star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
                         </svg>
-                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Fourth star</title>
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
@@ -303,7 +329,7 @@
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Instagram</h5>
 
                 <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Take a look of our gallery and recent
-                    projects on Instagram</p>
+                    post on Instagram</p>
 
                 <a href="https://www.instagram.com/danasaurus.store/" target="_blank"
                     class="inline-flex items-center text-blue-600 hover:underline">
