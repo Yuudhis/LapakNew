@@ -155,13 +155,13 @@
 
             <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
-                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 grid justify-center text-center ">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 grid justify-center text-center">
 
                     <h2
                         class="mb-4 text-7xl tracking-tight font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 dark:text-white md:text-left">
                         24/7 No outgage capacity</h2>
 
-                    <p class="mb-4">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure
+                    <p class="mb-4 md:text-left">With ChatGPT Plus, do not worry with outage capacity. The Plus subscription ensure
                         you can use ChatGPT even when demand is high</p>
 
                 </div>
