@@ -38,7 +38,8 @@ class UsersController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // $datausers = UsersModel::where('id', $id)->first();
+        // return view('userprofile',['name' => $datausers]);
     }
 
     /**
@@ -46,7 +47,8 @@ class UsersController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $datausers = UsersModel::find($id);
+        return view('editusers', ['name' => $datausers]);
     }
 
     /**
