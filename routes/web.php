@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,8 @@ Route::get('/table', function () {
 Route::get('/datauser', function () {
     return view('datauser');
 });
+
+// Route::resource('datausers', UsersController::class);
 
 Route::get('/user', function () {
     return view('user');
