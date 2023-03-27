@@ -34,11 +34,11 @@ Route::get('/table', function () {
     return view('table');
 });
 
-Route::get('/datauser', function () {
-    return view('datauser');
-});
+// Route::get('/datauser', function () {
+//     return view('datauser');
+// });
 
-// Route::resource('datausers', UsersController::class);
+Route::resource('datausers', UsersController::class);
 
 Route::get('/user', function () {
     return view('user');

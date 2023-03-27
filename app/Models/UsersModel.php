@@ -10,4 +10,9 @@ class UsersModel extends Model
     use HasFactory;
 
     protected $table = 'datausers';
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
 }

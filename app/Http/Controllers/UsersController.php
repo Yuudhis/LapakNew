@@ -13,7 +13,8 @@ class UsersController extends Controller
     public function index()
     {
         $datausers = UsersModel::all();
-        return view('datausers', ['users' => $datausers]);
+        return view('datausers', ['datausers' => $datausers]);
+        // dd($datausers);
     }
 
     /**

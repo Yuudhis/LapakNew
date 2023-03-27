@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('purchase', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('datausers_id');
+            $table->foreign('datausers_id')->references('id')->on('datausers');
             $table->timestamps();
         });
     }
