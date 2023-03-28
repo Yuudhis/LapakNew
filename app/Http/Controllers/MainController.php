@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UsersModel;
 use Illuminate\Http\Request;
+use App\Models\UsersModel;
 use Illuminate\Support\Facades\Hash;
 
-class UsersController extends Controller
+class MainController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // dd('test');
         $datausers = UsersModel::all();
-        return view('datausers', ['datausers' => $datausers]);
-        // dd($datausers);
+        return view('user', ['datausers' => $datausers]);
     }
 
     /**
@@ -24,7 +22,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('register');
     }
 
     /**
@@ -32,7 +30,13 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        UsersModel::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        return redirect()->route('users.index');
     }
 
     /**
@@ -40,8 +44,7 @@ class UsersController extends Controller
      */
     public function show(string $id)
     {
-        // $datausers = UsersModel::where('id', $id)->first();
-        // return view('userprofile',['name' => $datausers]);
+        //
     }
 
     /**
@@ -49,8 +52,7 @@ class UsersController extends Controller
      */
     public function edit(string $id)
     {
-        $datausers = UsersModel::find($id);
-        return view('editusers', ['name' => $datausers]);
+        //
     }
 
     /**
@@ -67,10 +69,5 @@ class UsersController extends Controller
     public function destroy(string $id)
     {
         //
-    }
-
-    public function finsishuser(Request $request)
-    {
-        return view('user');
     }
 }

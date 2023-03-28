@@ -34,6 +34,10 @@
                     class="inline-flex mb-5 text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                     Users Table
                 </h1>
+
+                <a href="">
+                    <p class="text-gray-400 underline underline-offset-2 hover:text-gray-600">Add new user</p>
+                </a>
             </div>
 
             <div class="relative overflow-x-auto">
@@ -84,8 +88,8 @@
 
                                 <td class="px-6 py-4">
                                     <ul class="underline underline-offset-2">
-                                        <a href="{{ route('datausers.edit'), $u->id }}">Edit</a>
-                                        <form action="{{ route('datausers.destroy'), $u->id }}" method="POST">
+                                        <a href="{{ route('datausers.edit', $u->id) }}">Edit</a>
+                                        <form action="{{ route('datausers.destroy', $u->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="underline underline-offset-2">Delete</button>
