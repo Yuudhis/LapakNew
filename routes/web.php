@@ -35,14 +35,10 @@ Route::get('/table', function () {
     return view('table');
 });
 
-// Route::get('/datauser', function () {
-//     return view('datauser');
-// });
-
 Route::resource('datausers', UsersController::class);
 
 Route::resource('users', MainController::class);
 
-Route::get('/user', function () {
-    return view('user');
-});
+// Route::get('/user', function () {
+//     return view('user');
+// });
