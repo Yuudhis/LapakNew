@@ -71,7 +71,10 @@ class UsersController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $datausers = UsersModel::find($id);
+        $datausers->delete();
+
+        return redirect()->route('datausers.index');
     }
 
     public function finsishuser(Request $request)

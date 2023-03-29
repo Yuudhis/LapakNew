@@ -23,6 +23,8 @@ class DatausersSeeder extends Seeder
             ['name' => 'yudhis', 'email' => 'yudhis@gmail.com', 'password' => '123123'],
             ['name' => 'dana', 'email' => 'dana@gmail.com', 'password' => '456456'],
             ['name' => 'adenia', 'email' => 'adenia@gmail.com', 'password' => '789789'],
+            ['name' => 'zein', 'email' => 'zein@gmail.com', 'password' => 'abcabc'],
+            ['name' => 'rauf', 'email' => 'rauf@gmail.com', 'password' => 'defdef'],
         ];
 
         foreach ($datausers as $value) {
