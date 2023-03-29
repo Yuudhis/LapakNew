@@ -30,7 +30,7 @@
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 
             <p class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
-                <img class="w-8 h-8 mr-2" src="img/mainlogo.png" alt="logo">
+                {{-- <img class="w-8 h-8 mr-2" src="img/mainlogo.png" alt="logo"> --}}
                 Danasaurus Store
             </p>
 
@@ -43,14 +43,18 @@
                         Edit User
                     </h1>
 
-                    <form class="space-y-4 md:space-y-6" action="#">
+                    <form class="space-y-4 md:space-y-6" action="{{ route('datausers.update', $datausers->id) }}"
+                        method="POST">
+
+                        @csrf
+                        @method('PUT')
 
                         <div>
-                            <label for="email"
+                            <label for="name"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New name</label>
-                            <input type="email" name="email" id="email"
+                            <input type="text" name="name" id="name"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="name@mail.com" required="">
+                                placeholder="new name" required value="{{ $datausers->name }}">
                         </div>
 
                         <div>
@@ -58,7 +62,7 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New email</label>
                             <input type="email" name="email" id="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="name@mail.com" required="">
+                                placeholder="name@mail.com" required value="{{ $datausers->email }}">
                         </div>
 
                         <button type="submit"

@@ -50,7 +50,7 @@ class UsersController extends Controller
     public function edit(string $id)
     {
         $datausers = UsersModel::find($id);
-        return view('editusers', ['name' => $datausers]);
+        return view('editusers', ['datausers' => $datausers]);
     }
 
     /**
@@ -58,7 +58,12 @@ class UsersController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $datausers = UsersModel::find($id);
+        $datausers->name = $request->name;
+        $datausers->email = $request->email;
+        $datausers->save();
+
+        return redirect()->route('datausers.index');
     }
 
     /**
