@@ -20,11 +20,11 @@ class DatausersSeeder extends Seeder
         Schema::enableForeignKeyConstraints();
 
         $datausers = [
-            ['name' => 'yudhis', 'email' => 'yudhis@gmail.com', 'password' => '123123'],
-            ['name' => 'dana', 'email' => 'dana@gmail.com', 'password' => '456456'],
-            ['name' => 'adenia', 'email' => 'adenia@gmail.com', 'password' => '789789'],
-            ['name' => 'zein', 'email' => 'zein@gmail.com', 'password' => 'abcabc'],
-            ['name' => 'rauf', 'email' => 'rauf@gmail.com', 'password' => 'defdef'],
+            ['name' => 'yudhis', 'role' => 'admin', 'email' => 'yudhis@gmail.com', 'password' => '123123'],
+            ['name' => 'dana', 'role' => 'users', 'email' => 'dana@gmail.com', 'password' => '456456'],
+            ['name' => 'adenia', 'role' => 'users', 'email' => 'adenia@gmail.com', 'password' => '789789'],
+            ['name' => 'zein', 'role' => 'users', 'email' => 'zein@gmail.com', 'password' => 'abcabc'],
+            ['name' => 'rauf', 'role' => 'users', 'email' => 'rauf@gmail.com', 'password' => 'defdef'],
         ];
 
         foreach ($datausers as $value) {
@@ -37,6 +37,7 @@ class DatausersSeeder extends Seeder
 
             UsersModel::insert([
                 'name' => $value['name'],
+                'role' => $value['role'],
                 'email' => $value['email'],
                 'password' => $value['password'],
                 'created_at' => Carbon::now(),

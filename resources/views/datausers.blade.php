@@ -53,6 +53,10 @@
                             </th>
 
                             <th scope="col" class="px-6 py-3">
+                                Role
+                            </th>
+
+                            <th scope="col" class="px-6 py-3">
                                 Name
                             </th>
 
@@ -79,6 +83,10 @@
                                 </th>
 
                                 <td class="px-6 py-4">
+                                    {{ $u->role }}
+                                </td>
+
+                                <td class="px-6 py-4">
                                     {{ $u->name }}
                                 </td>
 
@@ -87,7 +95,9 @@
                                 </td>
 
                                 <td class="px-6 py-4">
+
                                     <ul class="underline underline-offset-2">
+
                                         <li>
                                             <a href="{{ route('datausers.edit', $u->id) }}">Edit</a>
                                         </li>
@@ -101,8 +111,6 @@
                                                     class="underline underline-offset-2">Delete</button>
                                             </form>
                                         </li>
-
-
 
                                     </ul>
                                 </td>

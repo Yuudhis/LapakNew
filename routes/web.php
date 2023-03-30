@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
@@ -38,6 +39,8 @@ Route::get('/table', function () {
 Route::resource('datausers', UsersController::class);
 
 Route::resource('users', MainController::class);
+
+Route::get('/admin', [AdminController::class, 'index']);
 
 // Route::get('/user', function () {
 //     return view('user');
